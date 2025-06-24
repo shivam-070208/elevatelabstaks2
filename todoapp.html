@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To Do App</title>
+  <link rel="stylesheet" href="todoapp.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="nav">To Do App</nav>
+
+  <section class="status-bar">
+    <button class="status-btn active" data-filter="All">All</button>
+    <button class="status-btn" data-filter="Pending">Pending</button>
+    <button class="status-btn" data-filter="Completed">Completed</button>
+  </section>
+
+  <main class="task-grid"></main>
+
+  <button class="add-task-btn">+ Add Task</button>
+
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <span class="close-btn">&times;</span>
+      <h2>Add a new task</h2>
+      <input type="text" class="tskname" placeholder="Task name" />
+      <textarea class="description" placeholder="Description"></textarea>
+      <button class="add">Add</button>
+    </div>
+  </div>
+
+  <script src="todoapp.js"></script>
+</body>
+</html>
